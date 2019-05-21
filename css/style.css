@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #f1f1f1;
+    background-color: #eee !important;
     font-family: 'Roboto-Regular', 'Helvetica Neue', Helvetica, Tahoma, Arial, Sans-serif;
 }
 
@@ -70,7 +70,7 @@ a:hover {
 } */
 
 .menu ul li a:hover {
-    color: #000dc0;
+    color: #30b8de;
     background-color: #ECECEC;
     /* padding: 3px 15px 3px 0px; */
 }
@@ -133,6 +133,11 @@ li:hover {
 
 .top-bar-items .active {
     color: #f36f36;
+}
+
+.active {
+    color: #f36f36;
+    font-size: 14px;
 }
 
 .top-bar-items span a:hover {
@@ -245,9 +250,16 @@ li:hover {
     align-items: center;
 }
 
+.center-container {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: -220px;
+}
+
 .channels-box {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    justify-content: space-between;
 }
 
 .channels-box-items img {
@@ -256,5 +268,196 @@ li:hover {
 }
 
 .channels-box-items {
+    padding: 5px 60px 5px 5px;
+    background: #fff;
+    width: 230px;
+    border-radius: 20px;
+    /* margin: 10px; */
+}
+
+.flash-sale-box {
+    background: #ffffff;
+    border-bottom: #d5d5d5 1px solid;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.timer {
     padding: 10px;
+    color: #fff;
+    background: #f57224;
+    font-size: 16px;
+}
+
+.btn {
+    color: #f57224 !important;
+    border-color: #f57224 !important;
+}
+
+.btn:hover {
+    color: #f57224 !important;
+    border-color: #f57224 !important;
+    background-color: #fff !important;
+}
+
+.item-container {
+    background: #ffffff;
+    padding: 0px 15px 0px 15px;
+}
+
+.item-box {
+    background: #ffffff;
+    height: 290px;
+    width: 188px;
+    /* margin-right: 12px; */
+}
+
+.item-box:hover,
+.Daraz-mall-items:hover,
+.collection-items:hover,
+.categories-item:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    transform: all .3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.item-box img {
+    height: 188px;
+    width: 188px;
+}
+
+.item-title {
+    height: 36px;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.item-price {
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: #f57224;
+    letter-spacing: -.56px;
+    line-height: 22px;
+    height: 22px;
+}
+
+.heading {
+    font-family: 'Roboto-Regular';
+    font-size: 22px;
+    color: #424242;
+    margin: 10px 0px 5px 0px;
+}
+
+del {
+    color: #9e9e9e;
+    font-size: 12px;
+}
+
+.discount {
+    font-size: 12px;
+    /* font-weight: 500; */
+}
+
+.daraz-mall-box {
+    /* width: 100%; */
+    /* padding: 0px 15px 0px 15px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.Daraz-mall-items {
+    width: 200px !important;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 12px;
+    padding: 0px !important;
+}
+
+.img-daraz-box {
+    width: 188px;
+    height: 188px;
+}
+
+.icons {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25);
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    padding: 4px;
+    position: relative;
+    margin: -25px auto 0;
+}
+
+.icons img {
+    width: 44px;
+    height: 44px;
+}
+
+.Daraz-mall-items h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #212121;
+}
+
+.Daraz-mall-items p {
+    font-size: 12px;
+    /* line-height: 14px; */
+    color: #9e9e9e;
+    margin: 0 8px;
+}
+
+.collection-items {
+    width: 297px;
+    height: 146px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-top: 9px;
+}
+
+.collection-items h5 {
+    font-size: 14px;
+    color: #212121;
+}
+
+.collection-items p {
+    font-size: 14px;
+    color: #9e9e9e;
+    margin: 0;
+}
+
+.collection-items img {
+    width: 67px;
+    height: 67px;
+    display: block;
+    float: left;
+    padding-right: 10px;
+    margin: 10px 15px;
+}
+
+.categories-item {
+    width: 12.5%;
+    height: 148.5px;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+
+.categories-item img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 40px;
+}
+
+.categories-item p {
+    font-size: 14px;
+    color: #212121;
 }
